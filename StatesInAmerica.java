@@ -1,4 +1,3 @@
-
 public class StatesInAmerica {
 	int income = readInt("Please enter your annual income");
 	public String zeroException ()
@@ -13,16 +12,16 @@ public class StatesInAmerica {
 	
 	public boolean marriageStatus() {
 	String marriage;
-	boolean martialStatus;
+	boolean maritalStatus;
 
 	System.out.println("Are you currently married? If so, please enter 'y'. If not, please enter 'n'");
 	while (true) {
 	  marriage = in.nextLine().trim().toLowerCase();
 	  if (answer.equals("y")) {
-	    martialStatus = true;
+	    maritalStatus = true;
 	    break;
 	  } else if (answer.equals("n")) {
-	    martialStatus = false;
+	    maritalStatus = false;
 	    break;
 	  } else {
 	     System.out.println("Sorry, I didn't catch that. Please answer y/n");
@@ -33,17 +32,64 @@ public class StatesInAmerica {
 	
 	if(input.equals 'Alabama')
 	{
-		if(income<=500)
+		if(maritalStatus)
+		{
+			if(income<=1000)
+			{
+				return rate =0.02;
+			}
+			else if((income>=1001) && (income <=6000))
+			{
+				return rate =0.04;
+			}
+			else if(income>6000)
+			{
+				return rate =0.05;
+			}
+		}
+		else
+		{
+			if(income<=500)
+			{
+				return rate =0.02;
+			}
+			else if(income>=501 && income<=3000)
+			{
+				return rate = 0.04;
+			}
+			else if(income >3000)
+			{
+				return rate =0.0;
+			}
+		}
 	}
-	
 	if(input.equals 'Alaska')
 	{
-		
+		return rate ==0.0;
 	}
 	
 	if(input.equals 'Arizona')
 	{
-		
+		if(income<=10346)
+		{
+			return rate = .0259;
+		}
+		else if(income<=25861)
+		{
+			return rate = .0288;
+		}
+		else if(income<51721)
+		{
+			return rate = .0336;
+		}
+		else if(income<155159)
+		{
+			return rate=.0424;
+		}
+		else if(income>15160)
+		{
+			return rate =.0454;
+		}
 	}
 	
 	if(input.equals 'Arkansas')

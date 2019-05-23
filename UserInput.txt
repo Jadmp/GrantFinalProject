@@ -1,0 +1,48 @@
+import java.util.Scanner; 
+public class UserInput
+{ 
+    public static void main(String[] args) 
+    { 
+        
+        Scanner sc = new Scanner(System.in); 
+        System.out.println("Please enter your annual income");
+        String state = sc.nextLine();         
+        int income = sc.nextInt(); 
+        double cgpa = sc.nextDouble(); 
+  
+        System.out.println("State: "+state); 
+        System.out.println("Income: "+income); 
+    } 
+
+	System.out.println("Please enter your annual income");
+	public String zeroException ()
+	{
+		if(income<=0)
+		{
+			return "You pay no taxes!";
+		}
+	}
+	double tax = 0.0;
+	String state= readLine(" Please Enter your state of residence");
+	
+	public boolean maritalStatus() {
+	String marriage;
+	boolean marriageStatus;
+
+	System.out.println("Are you currently married? If so, please enter 'y'. If not, please enter 'n'");
+	while (true) {
+	  marriage = in.nextLine().trim().toLowerCase();
+	  if (answer.equals("y")) {
+	    marriageStatus = true;
+	    break;
+	  } else if (answer.equals("n")) {
+	    marriageStatus = false;
+	    break;
+	  } else {
+	     System.out.println("Sorry, I didn't catch that. Please answer y/n");
+	  }
+	}
+	}
+	System.out.println(income + ", " + state);
+	
+}

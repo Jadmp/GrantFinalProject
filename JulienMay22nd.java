@@ -227,25 +227,25 @@ public class staterate {
 	{
 		if(income<2000)
 		{
-			 rate = 0.022;
+			 tax = (2000* 0.022);
 		}
 		else if(income<10000)
 		{
-			 rate = 0.048;
+			 tax =(2000* 0.022)+(8000*0.048);
 		}
 		else if(income<25000)
 		{
-			 rate = 0.052;
+			 tax= (2000* 0.022)+(8000*0.048)+(15000* 0.052);
 		}
 		else if(income>60000)
 		{
-			 rate = 0.066;
+			 tax =(2000* 0.022)+(8000*0.048)+(15000* 0.052)+((income-60000)* 0.066);
 		}
 	}
 	
 	if(state.equals 'Florida')
 	{
-		 rate = 0.0;
+		 tax = 0.0;
 	}
 	
 	if(state.equals 'Georgia')
@@ -254,38 +254,38 @@ public class staterate {
 		{
 			if(income<1000)
 			{
-				 rate = 0.01;
+				 tax =(1000* 0.01);
 			}
 			else if(income<3000)
 			{
-				 rate = 0.02;
+				 tax =(1000* 0.01)+ (2000* 0.02);
 			}
 			else if(income<7000)
 			{
-				 rate = 0.04;
+				 tax = (1000* 0.01)+ (2000* 0.02)+ (4000*0.04);
 			}
 			else if(income>10000)
 			{
-				 rate = 0.06;
+				 tax = (1000* 0.01)+ (2000* 0.02)+ (4000*0.04)+ ((income-100000)*.06);
 			}
 		}
 		else if(marriageStatus = false)
 		{
-			if(income <750)
+			if(income <=750)
 			{
-				 rate = 0.01;
+				 tax = (750 *0.01);
 			}
-			else if(income<2250)
+			else if(income<=2250)
 			{
-				 rate 0.02;
+				 tax = (750 *0.01)+(1500* 0.02);
 			}
-			else if(income<5250)
+			else if(income<=5250)
 			{
-				 rate = 0.04;
+				 tax = (750 *0.01)+(1500* 0.02)+ (3000*0.04);
 			}
 			else if(income>7000)
 			{
-				 rate = 0.06;
+				 tax =((income-7000)* 0.06) + (750 *0.01)+(1500* 0.02)+ (3000*0.04);
 			}
 		}
 	}
@@ -294,52 +294,52 @@ public class staterate {
 	{
 		if(marriageStatus)
 		{
-			if(income<4800)
+			if(income<=4800)
 			{
-				 rate =0.014;
+				 tax =(4800*0.014);
 			}
-			else if(income<9600)
+			else if(income<=9600)
 			{
-				 rate = 0.032;
+				 tax = (4800*0.014)+(4800* 0.032);
 			}
-			else if(income<28800)
+			else if(income<=28800)
 			{
-				 rate = 0.068;
+				 tax =(4800*0.014)+(4800* 0.032)+(19280* 0.068);
 			}
-			else if(income<48000)
+			else if(income<=48000)
 			{
-				 rate = 0.072;
+				 tax = (4800*0.014)+(4800* 0.032)+(19280* 0.068)+ (19200*0.072);
 			}
-			else if(income<72000)
+			else if(income<=72000)
 			{
-				 rate = 0.079;
+				 tax =(4800*0.014)+(4800* 0.032)+(19280* 0.068)+ (19200*0.072)+(24000* 0.079);
 			}
-			else if(income>9600)
+			else if(income>96000)
 			{
-				 rate = 0.0825;
+				 tax = (4800*0.014)+(4800* 0.032)+(19280* 0.068)+ (19200*0.072)+(24000* 0.079)+ ((income-96000)*0.0825);
 			}
 		}
 		else if(marriageStatus = false)
 		{
-			if(income<2400)
+			if(income<=2400)
 			{
-				 rate = 0.014;
+				 tax = (2400*0.014);
 			}
-			else if(income<9600)
+			else if(income<=9600)
 			{
-				 rate = 0.055;
+				 tax =(2400*0.014)+(7200* 0.055);
 			}
-			else if(income<19200)
+			else if(income<=19200)
 			{
-				 rate = 0.072;
+				 tax = (2400*0.014)+(7200* 0.055)+ (9600*0.072);
 			}
-			else if(income<36000)
+			else if(income<=36000)
 			{
-				 rate = 0.079;
+				 tax = (2400*0.014)+(7200* 0.055)+ (9600*0.072)+(16800*0.079);
 			}
 			else if(income>48000)
 			{
-				 rate = 0.0825;
+				 tax =(2400*0.014)+(7200* 0.055)+ (9600*0.072)+(16800*0.079)+((income-48000)* 0.0825);
 			}
 		}
 	}
@@ -348,79 +348,79 @@ public class staterate {
 	{
 		if(marriageStatus)
 		{
-			if(income<2908)
+			if(income<=2908)
 			{
-				 rate = 0.016;
+				 tax = (2908*0.016);
 			}
-			else if(income<8724)
+			else if(income<=8724)
 			{
-				 rate = 0.0410;
+				 tax =(2908*0.016)+(5816* 0.0410);
 			}
-			else if(income<14540)
+			else if(income<=14540)
 			{
-				 rate = 0.061;
+				 tax = (2908*0.016)+(5816* 0.0410)+(5816*0.061);
 			}
 			else if(income>21810)
 			{
-				 rate = 0.074;
+				 tax = (2908*0.016)+(5816* 0.0410)+(5816*0.061)+((income-21810)* 0.074);
 			}
 		}
 		else if(marriageStatus = false)
 		{
-			if(income<1454)
+			if(income<=1454)
 			{
-				 rate = 0.016;
+				 tax = (14540.016);
 			}
-			else if(income <4362)
+			else if(income <=4362)
 			{
-				 rate = 0.041;
+				 tax =(14540.016)+(2908* 0.041);
 			}
-			else if(income<7270)
+			else if(income<=7270)
 			{
-				 rate = 0.061;
+				 tax = (14540.016)+(2908* 0.041)+ (2908*0.061);
 			}
 			else if (income>10905)
 			{
-				 rate = 0.074;
+				 tax =((income-10905)*0.074)+(14540.016)+(2908* 0.041)+ (2908*0.061);
 			}
 		}
 	}
 	
 	if(state.equals 'Illinois')
 	{
-		 rate=0.0375;
+		 tax= income*0.0375;
 	}
 	
 	if(state.equals 'Indiana;)
 	{
-		 rate = 0.033;
+		 tax = income*0.033;
 	}
 	
 	if(state.equals 'Iowa')
 	{
-		if(income<1573)
+		if(income<=1573)
 		{
-			 rate = 0.0036;
+			 tax =(1573* 0.0036);
 		}
-		else if(income<3146)
+		else if(income<=3146)
 		{
-			 rate = 0.0072;
+			 tax = (1573* 0.0036)+(1573*0.0072);
 		}
-		else if(income<14157)
+		else if(income<=14157)
 		{
-			 rate = 0.045;
+			 tax =(1573* 0.0036)+(1573*0.0072)+(11011* 0.045);
 		}
-		else if(income<31460)
+		else if(income<=31460)
 		{
-			 rate = 0.0648;
+			 tax =(1573* 0.0036)+(1573*0.0072)+(11011* 0.045)+(17303* 0.0648);
 		}
-		else if(income<47190)
+		else if(income<=47190)
 		{
-			 rate = 0.068;
+			 tax = (1573* 0.0036)+(1573*0.0072)+(11011* 0.045)+(17303* 0.0648)+ (15730*0.068);
 		}
 		else if(income>70785)
 		{
-			 rate = 0.0898;
+			 tax =((income-70785)* 0.0898)+(1573* 0.0036)+(1573*0.0072)+(11011* 0.045)+(17303* 0.0648)+ (15730*0.068);
 		}
 	}
 
@@ -428,61 +428,61 @@ public class staterate {
 	{
 		if(marriageStatus)
 		{
-			if(income<30000)
+			if(income<=30000)
 			{
-				 rate = 0.029;
+				 tax = (30000*0.029);
 			}
-			else if(income<60000)
+			else if(income<=60000)
 			{
-				 rate = 0.049;
+				 tax =(30000*0.029)+(30000* 0.049);
 			}
 			else if(income>60000)
 			{
-				 rate = 0.052;
+				 tax = ((income-60000)*0.052)+(30000*0.029)+(30000* 0.049);
 			}
 		}
 		else if(marraigeStatus =false)
 		{
-			if(income<15000)
+			if(income<=15000)
 			{
-				 rate = 0.029;
+				 tax = (15000*0.029);
 			}
-			else if(income<30000)
+			else if(income<=30000)
 			{
-				 rate = 0.049;
+				 tax = (15000*0.029)+(15000*0.049);
 			}
 			else if(income>30000)
 			{
-				 rate = 0.052;
+				 tax =(15000*0.029)+(15000*0.049)+((income-30000)* 0.052);
 			}
 		}
 	}
 	
 	if(state.equals 'Kentucky';)
 	{
-		if(income<3000)
+		if(income<=3000)
 		{
-			 rate = 0.02;
+			 tax = (3000*0.02);
 		}
-		else if(income < 4000)
+		else if(income <= 4000)
 		{
-			 rate = 0.03;
+			 tax =(3000*0.02)+(1000* 0.03);
 		}
-		else if(income<5000)
+		else if(income<=5000)
 		{
-			 rate = 0.04;
+			 tax = (3000*0.02)+(1000* 0.03)+(1000*0.04);
 		}
-		else if(income<8000)
+		else if(income<=8000)
 		{
-			 rate = 0.05;
+			 tax =(3000*0.02)+(1000* 0.03)+(1000*0.04)+(3000* 0.05);
 		}
-		else if(income<75000)
+		else if(income<=75000)
 		{
-			 rate = 0.058;
+			 tax =(3000*0.02)+(1000* 0.03)+(1000*0.04)+(3000* 0.05)+(67000* 0.058);
 		}
 		else if(income>75000)
 		{
-			 rate= 0.06;
+			 tax=((income-75000)* 0.06)+(3000*0.02)+(1000* 0.03)+(1000*0.04)+(3000* 0.05)+(67000* 0.058);
 		}
 	}
 	
@@ -490,32 +490,32 @@ public class staterate {
 	{
 		if(marriageStatus)
 		{
-			if(income<25000)
+			if(income<=25000)
 			{
-				 rate = 0.02;
+				 tax = (25000*0.02);
 			}
-			if(income<100000)
+			if(income<=100000)
 			{
-				 rate = 0.04;
+				 tax =(25000*0.02)+(75000* 0.04);
 			}
 			if(income>100000)
 			{
-				 rate = 0.06;
+				 tax =((income-100000)* 0.06)+(25000*0.02)+(75000* 0.04);
 			}
 		}
 		else if(!marriageStatus)
 		{
-			if(income<12500)
+			if(income<=12500)
 			{
-				 rate = 0.02;
+				 tax =(12500* 0.02);
 			}
-			if(income<50000)
+			if(income<=50000)
 			{
-				 rate = 0.04;
+				 tax =(12500* 0.02)+(37500* 0.04);
 			}
 			if(income>50000)
 			{
-				 rate = 0.06;
+				 tax = ((income-50000)*0.06)+(12500* 0.02)+(37500* 0.04);
 			}
 		}
 	}
@@ -524,129 +524,129 @@ public class staterate {
 	{
 		if(marriageStatus)
 		{
-			if(income<42099)
+			if(income<=42099)
 			{
-				 rate =  0.058;
+				 tax = (42099* 0.058);
 			}
-			if(income<74999)
+			if(income<=74999)
 			{
-				 rate = 0.0675;
+				 tax = (42099* 0.058)+(32900* 0.0675);
 			}
 			if(income>74999)
 			{
-				 rate = 0.0715;
+				 tax =(income-74999)* 0.0715)+(42099* 0.058)+(32900* 0.0675);
 			}
 		}
 		else if(!marriageStatus)
 		{
-			if(income<21050)
+			if(income<=21050)
 			{
-				 rate = 0.058;
+				 tax = (21050*0.058);
 			}
-			if(income<50000)
+			if(income<=50000)
 			{
-				 rate = 0.0675;
+				 tax =(21050*0.058)+(28950* 0.0675);
 			}
-			if(income>=50000)
+			if(income>50000)
 			{
-				 rate = 0.0715;
+				 tax =((income-50000)* 0.0715)+(21050*0.058)+(28950* 0.0675);
 			}
 		}
 	}
 	
 	if(state.equals 'Maryland';)
 	{
-		if(income<1000)
+		if(income<=1000)
 		{
-			 rate=0.02;
+			 tax = (1000*0.02);
 		}
-		if(income<2000)
+		if(income<=2000)
 		{
-			 rate = 0.03;
+			 tax =(1000*0.02)+(1000* 0.03);
 		}
-		if(income<3000)
+		if(income<=3000)
 		{
-			 rate = 0.04;
+			 tax = (1000*0.02)+(1000* 0.03)+(1000*0.04);
 		}
-		if(income<100000)
+		if(income<=100000)
 		{
-			 rate = 0.0475;
+			 tax = (1000*0.02)+(1000* 0.03)+(1000*0.04)+ (97000*0.0475);
 		}
-		if(income<150000)
+		if(income<=150000)
 		{
-			 rate = 0.0525;
+			 tax =(1000*0.02)+(1000* 0.03)+(1000*0.04)+ (97000*0.0475)+(50000* 0.0525);
 		}
-		if(income<250000)
+		if(income>250000)
 		{
-			 rate = 0.0575;
+			 tax = ((income-250000)*0.0575)+(1000*0.02)+(1000* 0.03)+(1000*0.04)+ (97000*0.0475)+(50000* 0.0525);
 		}
 	}
 	
 	if(state.equals 'Massachusetts';)
 	{
-		 rate = 0.051;	
+		 tax = income*0.051;	
 	}
 	
 	if(state.equals 'Michigan';)
 	{
-		 rate = 0.0425;		
+		 tax = income*0.0425;		
 	}
 	
 	if(state.equals 'Minnesota';)
 	{
 		if(marriageStatus)
 		{
-			if(income<37110)
+			if(income<=37110)
 			{
-				 rate= 0.0535;
+				 tax= (37110*0.0535);
 			}
-			if(income<147450)
+			if(income<=147450)
 			{
-				 rate=0.0705;
+				 tax =(37110*0.0535)+ (110340*0.0705);
 			}
-			if(income<261510)
+			if(income<=261510)
 			{
-				 rate = 0.0785;
+				 tax = (37110*0.0535)+ (110340*0.0705)+(114060*0.0785);
 			}
-			if(income>=261510)
+			if(income>261510)
 			{
-				 rate = 0.0985;
+				 tax = ((income-261510)*0.0985);
 			}
 		}
 		else if(!marriageStatus)
 		{
-			if(income<25390)
+			if(income<=25390)
 			{
-				 rate = 0.0535;
+				 tax =(25390* 0.0535);
 			}
-			if(income<83400)
+			if(income<=83400)
 			{
-				 rate = 0.0705;
+				 tax =(25390* 0.0535)+(58010* 0.0705);
 			}
-			if(income<156911)
+			if(income<=156911)
 			{
-				 rate = 0.0785;
+				 tax = (25390* 0.0535)+(58010* 0.0705)+(73511*0.0785);
 			}
-			if(income>=156911)
+			if(income>156911)
 			{
-				 rate = 0.0985;
+				 tax = ((income-156911)*0.0985)+(25390* 0.0535)+(58010* 0.0705)+(73511*0.0785);
 			}
 		}
 	}
 	
 	if(state.equals 'Mississippi';)
 	{
-		if(income<5000)
+		if(income<=5000)
 		{
-			 rate = 0.03;
+			 tax =(5000* 0.03);
 		}
-		if(income<10000)
+		if(income<=10000)
 		{
-			 rate = 0.04;
+			 tax = (5000* 0.03)+(5000*0.04);
 		}
-		if(income>=5000)
+		if(income>50000)
 		{
-			 rate = 0.05;
+			 tax = ((income-50000)*0.05)+(5000* 0.03)+(5000*0.04);
 		}
 	}
 	
